@@ -26,7 +26,8 @@
     "validate.io",
     "validate",
     "validation",
-    "validator"
+    "validator",
+    "has properties"
   ],
   "bugs": {
     "url": "https://github.com/validate-io/properties/issues"

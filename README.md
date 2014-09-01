@@ -1,4 +1,4 @@
-properties
+Properties
 ===
 [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Coverage Status][coveralls-image]][coveralls-url] [![Dependencies][dependencies-image]][dependencies-url]
 
@@ -19,15 +19,37 @@ For use in the browser, use [browserify](https://github.com/substack/node-browse
 To use the module,
 
 ``` javascript
-var lib = require( 'validate.io-properties' );
+var hasProperties = require( 'validate.io-properties' );
+
+var obj = {
+	'beep': true,
+	'boop': false,
+	'baz': 'foo',
+	'bap': 'bar'
+};
+
+var props = [
+	'beep',
+	'bap'
+];
+
+console.log( hasProperties( obj, props ) );
+// Returns true
+
+props[ 2 ] = 'buzz';
+console.log( hasProperties( obj, props ) );
+// Returns false
 ```
+
+## Notes
+
+* 	This method validates that the `value` is a plain `object` and returns `false` for any `value` types which are not plain JavaScript `objects`. 
+*	This method does __not__ climb the prototype chain.
+* 	The property list should be an `array`.
+*	The method returns `false` as soon as an unrecognized property is found.
 
 
 ## Examples
-
-``` javascript
-var lib = require( 'validate.io-properties' );
-```
 
 To run the example code from the top-level application directory,
 
