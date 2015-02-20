@@ -28,17 +28,22 @@
     "validation",
     "validator",
     "valid",
+    "object",
     "has properties"
   ],
   "bugs": {
     "url": "https://github.com/validate-io/properties/issues"
   },
-  "dependencies": {},
+  "dependencies": {
+    "validate.io-object": "^1.0.2"
+  },
   "devDependencies": {
     "chai": "1.x.x",
     "mocha": "1.x.x",
     "coveralls": "^2.11.1",
-    "istanbul": "^0.3.0"
+    "istanbul": "^0.3.0",
+    "jshint": "^2.5.10",
+    "jshint-stylish": "^1.0.0"
   },
   "licenses": [
     {
