@@ -29,7 +29,10 @@
     "validator",
     "valid",
     "object",
-    "has properties"
+    "has properties",
+    "is",
+    "type",
+    "check"
   ],
   "bugs": {
     "url": "https://github.com/validate-io/properties/issues"
